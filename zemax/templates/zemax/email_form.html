@@ -1,0 +1,22 @@
+{% extends 'zemax/base.html' %}
+{% load crispy_forms_tags %}
+
+{% block title %}
+<title>SEND EMAIL</title>
+{% endblock %}
+
+{% block content %}
+<br>
+    <div class="content-section container">
+        <form enctype="multipart/form-data" method="POST">
+            {% csrf_token %}
+            <fieldset class="form-group">
+                <legend class="border-bottom md-4">Send Email</legend>
+                {{ form|crispy }}
+            </fieldset>
+            <div class="form-group">
+                <button type="submit" class="btn btn-outline-info">Send</button>
+            </div>
+        </form>
+    </div>
+{% endblock %}

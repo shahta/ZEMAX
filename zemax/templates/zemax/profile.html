@@ -1,0 +1,17 @@
+{% extends 'zemax/base.html' %}
+
+{% block title %}
+<title>Profile Page</title>
+{% endblock %}
+
+{% block content %}
+<br>
+<br>
+<div class="card container">
+  <h5 class="card-header">{{request.user}}</h5>
+  <div class="card-body">
+    <h5 class="card-title">{{request.user.get_profile.email_address}}</h5>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+  </div>
+</div>
+{% endblock %}

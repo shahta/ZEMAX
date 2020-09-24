@@ -1,0 +1,56 @@
+{% extends 'zemax/base.html' %}
+{% block title %}
+<title>Zero Down Real Estate</title>
+{% endblock %}
+
+{% block content %}
+<br>
+<div class="container">
+    <h1>{{ header }}</h1>
+    <h6>Written By: {{person}} from <a target="_blank" href="https://sparkrental.com/how-to-buy-your-first-rental-property-no-money-down/">Spark Rental</a> </h6>
+    <br>
+    <h4>{{ house_hacking }}</h4>
+    {% for item in house_hacking_p %}
+        <p>{{ item }}</p>
+    {% endfor %}
+    <h4>{{ BRRRR }}</h4>
+    {% for item in BRRRR_p %}
+        <p>{{ item }}</p>
+    {% endfor %}
+        <br>
+    <h4>{{ seller_financing }}</h4>
+    {% for item in seller_financing_p %}
+        <p>{{ item }}</p>
+    {% endfor %}
+        <br>
+    <h4>{{ seller_mortgage }}</h4>
+    {% for item in seller_mortgage_p %}
+        <p>{{ item }}</p>
+    {% endfor %}
+        <br>
+    <h4>{{ second_mortgage }}</h4>
+    {% for item in second_mortgage_p %}
+        <p>{{ item }}</p>
+    {% endfor %}
+        <br>
+    <h4>{{ collateral }}</h4>
+    {% for item in collateral_p %}
+        <p>{{ item }}</p>
+    {% endfor %}
+        <br>
+    <h4>{{ partners }}</h4>
+    {% for item in partners_p %}
+        <p>{{ item }}</p>
+    {% endfor %}
+        <br>
+    <h4>{{ credit_cards }}</h4>
+    {% for item in credit_cards_p %}
+        <p>{{ item }}</p>
+    {% endfor %}
+        <br>
+    <h4>{{ heloc }}</h4>
+    {% for item in heloc_p %}
+        <p>{{ item }}</p>
+    {% endfor %}
+</div>
+{% endblock %}

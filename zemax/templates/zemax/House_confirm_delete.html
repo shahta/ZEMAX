@@ -1,0 +1,22 @@
+{% extends 'zemax/base.html' %}
+
+{% block title %}
+<title>DELETE LISTING</title>
+{% endblock %}
+
+{% block content %}
+<br>
+    <div class="content-section container">
+        <form enctype="multipart/form-data" method="POST">
+            {% csrf_token %}
+            <fieldset class="form-group">
+                <legend class="border-bottom md-4">Delete Post</legend>
+                <h2>Are you sure you want to delete the listing "{{object.address}}"?</h2>
+            </fieldset>
+            <div class="form-group">
+                <button type="submit" class="btn btn-outline-danger">Delete</button>
+                <a class="btn btn-outline-secondary" href="{% url 'detail' object.id %}">Cancel</a>
+            </div>
+        </form>
+    </div>
+{% endblock %}
