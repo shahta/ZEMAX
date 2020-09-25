@@ -1,5 +1,6 @@
 # ZEMAX
-A Django webapp for buying and selling luxury real estate properties.
+
+## Here you will find snippets of some pages from my website
 
 ![alt text](https://github.com/shahta/ZEMAX/blob/master/zemax1.jpg)
 
